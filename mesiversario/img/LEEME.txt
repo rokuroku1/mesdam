@@ -1,5 +1,0 @@
-Pon aquí tus fotos con estos nombres (o cambia los nombres en index.html):
-- primerafoto.jpg
-- fav.jpg
-- empezar.jpg
-- graciosa.jpg

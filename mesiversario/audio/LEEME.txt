@@ -1,3 +1,0 @@
-Pon aquí tus archivos de audio .mp3 con estos nombres (o cambia los nombres en index.html):
-- cancion1.mp3
-- cancion2.mp3
