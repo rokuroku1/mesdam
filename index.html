@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>feli mesiversario</title>
+
+<!-- Fuentes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@400;500;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Corazones flotantes de fondo -->
+<div class="hearts-bg" id="heartsBg"></div>
+
+<!-- ============================= -->
+<!-- SECCIÓN 1: SALUDO + REGALO -->
+<!-- ============================= -->
+<section class="screen" id="screen-saludo">
+  <div class="content-center">
+    <!-- EDITA AQUÍ: nombre de tu novio -->
+    <h1 class="title-big">feli mesiversario<br><span class="nombre">dam:3</span></h1>
+    <p class="subtitle">tngo algo xra ti...(* ^ ω ^)</p>
+    <button class="btn-regalo" id="btnRegalo">abrir regalo!!</button>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- SECCIÓN 2: CONTADOR -->
+<!-- ============================= -->
+<section class="screen" id="screen-contador" style="display:none;">
+  <div class="content-center">
+    <h2 class="title-section">llevamos juntos...</h2>
+    <div class="contador-grid">
+      <div class="contador-box"><span id="c-anios">0</span><small>Años</small></div>
+      <div class="contador-box"><span id="c-meses">0</span><small>Meses</small></div>
+      <div class="contador-box"><span id="c-dias">0</span><small>Días</small></div>
+      <div class="contador-box"><span id="c-horas">0</span><small>Horas</small></div>
+      <div class="contador-box"><span id="c-min">0</span><small>Min</small></div>
+      <div class="contador-box"><span id="c-seg">0</span><small>Seg</small></div>
+    </div>
+    <button class="btn-continuar" data-next="screen-fotos">continuar →</button>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- SECCIÓN 3: FOTOS -->
+<!-- ============================= -->
+<section class="screen" id="screen-fotos" style="display:none;">
+  <div class="content-center">
+    <h2 class="title-section">Nuestros momentos 📸</h2>
+    <!--
+      EDITA AQUÍ: agrega/quita tarjetas de fotos.
+      Cada .polaroid es una foto. Cambia la ruta "img/xxx.jpg"
+      por el nombre real de tu archivo dentro de la carpeta img/.
+    -->
+    <div class="galeria">
+      <div class="polaroid rot1">
+        <img src="img/primerafoto.jpg" alt="Primera foto">
+        <p>Nuestra primera foto :333</p>
+      </div>
+      <div class="polaroid rot2">
+        <img src="img/fav.jpg" alt="Foto favorita">
+        <p>Mi foto favorita :333</p>
+      </div>
+      <div class="polaroid rot1">
+        <img src="img/empezar.jpg" alt="El día que empezamos">
+        <p>El día que te empezamos a amarnos :333</p>
+      </div>
+      <div class="polaroid rot2">
+        <img src="img/graciosa.jpg" alt="Foto graciosa">
+        <p>Nuestra foto más chistosa :333</p>
+      </div>
+      <!-- Puedes copiar y pegar un bloque .polaroid más aquí si quieres agregar más fotos -->
+    </div>
+    <button class="btn-continuar" data-next="screen-pregunta">continuar →</button>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- SECCIÓN 4: PREGUNTA SI/NO -->
+<!-- ============================= -->
+<section class="screen" id="screen-pregunta" style="display:none;">
+  <div class="content-center">
+    <h2 class="title-section" id="pregunta-texto">qres compartir el resto d tu vida cnmigo?</h2>
+    <div class="pregunta-botones" id="preguntaBotones">
+      <button class="btn-si" id="btnSi">simm ꒰ ˶• ༝ •˶꒱</button>
+      <button class="btn-no" id="btnNo">no ( = ⩊ = )</button>
+    </div>
+    <div class="respuesta-final" id="respuestaFinal" style="display:none;">
+      <p>yo sabia k si jejejj(ᗒ⩊ᗕ)</p>
+      <button class="btn-continuar" data-next="screen-canciones">continuar →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- SECCIÓN 5: CANCIONES -->
+<!-- ============================= -->
+<section class="screen" id="screen-canciones" style="display:none;">
+  <div class="content-center">
+    <h2 class="title-section">camciones k son d mi xra ti (๑˘︶˘๑)</h2>
+    <!--
+      EDITA AQUÍ: cambia título, artista, mensaje y el archivo de audio.
+      Sube tus mp3 a la carpeta /audio/ y pon aquí el nombre del archivo.
+      Si prefieres usar Spotify, reemplaza el <audio> por un iframe embed de Spotify.
+    -->
+    <div class="canciones-lista">
+      <div class="cancion-card">
+        <div class="disco">💿</div>
+        <div class="cancion-info">
+          <h3>Michael Jackson - Love Never Felt So Good</h3>
+          <p class="mensaje-cancion">pq el amor nunca s sintio tan bonito i tan bien cm s siente ahora cntigo (＾• ω •＾)</p>
+          <audio controls src="audio/cancion1.mp3"></audio>
+        </div>
+      </div>
+      <div class="cancion-card">
+        <div class="disco">💿</div>
+        <div class="cancion-info">
+          <h3>Underaiki - pami</h3>
+          <p class="mensaje-cancion">nuestra cancion, m recuerda muxo a ti ( =ノωヽ=)</p>
+          <audio controls src="audio/cancion2.mp3"></audio>
+        </div>
+      </div>
+      <!-- Copia este bloque .cancion-card para agregar más canciones -->
+    </div>
+    <button class="btn-continuar" data-next="screen-cartas">continuar →</button>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- SECCIÓN 6: CARTAS -->
+<!-- ============================= -->
+<section class="screen" id="screen-cartas" style="display:none;">
+  <div class="content-center">
+    <h2 class="title-section">cartitas ｡ﾟ(｡ﾉωヽ｡)ﾟ｡</h2>
+    <!--
+      EDITA AQUÍ: cambia el título de cada sobre y el texto que aparece
+      al abrirlo, dentro del <div class="carta-contenido">.
+    -->
+    <div class="cartas-grid">
+      <div class="sobre" data-carta="carta1">
+        <div class="sobre-frente">xra cuando me extrañes</div>
+      </div>
+      <div class="sobre" data-carta="carta2">
+        <div class="sobre-frente">xra nuestro mesiversario</div>
+      </div>
+      <div class="sobre" data-carta="carta3">
+        <div class="sobre-frente">solo xq sí ✧*｡٩(ˊᗜˋ*)و✧*｡</div>
+      </div>
+      <!-- Copia un bloque .sobre para agregar más cartas -->
+    </div>
+
+    <!-- Contenido de las cartas (oculto hasta que se abre el sobre) -->
+    <div class="carta-modal" id="cartaModal">
+      <div class="carta-papel">
+        <span class="cerrar-carta" id="cerrarCarta">✕</span>
+        <p class="carta-texto" id="cartaTexto"></p>
+      </div>
+    </div>
+
+    <p class="final-mensaje">t amo mucho, gracias x estos meses tan bonitos :3333</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
